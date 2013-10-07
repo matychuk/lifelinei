@@ -1,0 +1,56 @@
+<%= stylesheet_link_tag 'standard' %>
+<% provide(:title, "Certified Training Feedback") %>
+
+<div class="main-area"><!-- main area -->
+  <!-- title bar -->
+  <%= render 'title_bar' %><!-- title bar partial -->
+  <!-- end title bar -->
+  <div class="main-holder"><!-- main holder -->
+    <div id="content"><!-- content -->
+      <div class="content_right_sidebar"><!-- left content -->
+        <% flash.each do |key, value| %>
+            <p class="message_<%= key %>">
+              <%= value %>
+            </p>
+        <% end %>
+        <h3>Please complete the form below to help us improve our Certified Training offering:</h3>
+        <div class="survey-outer"><!-- iphorm outer -->
+          <div class="survey-wrapper"><!-- iphorm wrapper -->
+            <div class='survey-inner'><!-- iphorm inner -->
+              <div class='survey-message'></div><!-- end iphorm message -->
+              <div class='survey-container clearfix'><!-- iphorm container -->
+                <%= render 'form' %>
+              </div><!-- end iphorm container -->
+            </div><!-- iphorm wrapper -->
+          </div><!-- iphorm inner -->
+        </div><!-- end iphorm outer -->
+      </div><!-- end left content -->
+      <br class="clear" />
+    </div><!-- end content --->
+    <div id="sub_nav" class="nav_right_sub_nav"><!-- start sub nav -->
+      <%= render 'sub_nav' %>
+    </div><!-- end sub nav -->
+  </div><!-- end main holder -->
+</div><!-- end main area -->
+
+<%= javascript_tag do %>
+    ( function( $ ) {
+        $( document ).ready( function() {
+            var surveyInput = $( '#survey_opinion_rating' );
+            var commentContainer = surveyInput.closest( '.element-wrapper' ).next( '.element-wrapper' );
+
+            // generate error label in javascript until a ruby solution can be found
+            commentContainer.find( 'label' ).after( '<div class="error">Please tell us what would it take to receive a score of 10?  Please be as specific as possible, thank you for your feedback!  If you would like your customer service rep to contact you please add your name, email address and phone number.</div>' );
+
+            surveyInput.change( function() {
+                var value = $( this ).val();
+
+                if( value && ( value <= 9 ) ) {
+                    commentContainer.addClass( 'need-feedback' );
+                } else {
+                    commentContainer.removeClass( 'need-feedback' );
+                }
+            });
+        });
+    })( jQuery )
+<% end %>

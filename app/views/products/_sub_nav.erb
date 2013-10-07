@@ -1,0 +1,27 @@
+<ul class="sub-menu"><!-- start sub menu -->
+  <li class=<%= get_action_klass('main') %>>
+    <%= link_to products_path do %>
+        <span>Our Products</span>
+    <% end %>
+  </li>
+  <li class=<%= get_action_klass('aeds') %>>
+    <%= link_to aeds_path do %>
+        <span>Automated External Defibrillators</span>
+    <% end %>
+  </li>
+  <li class=<%= get_action_klass('accessories') %>>
+    <%= link_to accessories_path do %>
+        <span>AED Accessories</span>
+    <% end %>
+  </li>
+  <li class=<%= get_action_klass('comparison') %>>
+    <%= link_to comparison_path do %>
+        <span>AED Comparison</span>
+    <% end %>
+  </li>
+  <li class=<%= get_action_klass('registration') %>>
+    <%= link_to registration_path do %>
+        <span>AED Registration</span>
+    <% end %>
+  </li>
+</ul><!-- end sub menu -->

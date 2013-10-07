@@ -1,0 +1,22 @@
+<ul class="sub-menu"><!-- start sub menu -->
+  <li class=<%= get_action_klass('main') %>>
+    <%= link_to services_path do %>
+        <span>Documentation Solutions</span>
+    <% end %>
+  </li>
+  <li class=<%= get_action_klass('administration') %>>
+    <%= link_to administration_path do %>
+        <span>Program Administration</span>
+    <% end %>
+  </li>
+  <li class=<%= get_action_klass('oversight') %>>
+    <%= link_to oversight_path do %>
+        <span>Medical Oversight</span>
+    <% end %>
+  </li>
+  <li class=<%= get_action_klass('monitor') %>>
+    <%= link_to monitor_path do %>
+        <span>Compliance Monitor</span>
+    <% end %>
+  </li>
+</ul><!-- end sub menu -->

@@ -1,0 +1,30 @@
+<% provide(:title, "FAQs") %>
+
+<div class="main-area"><!-- main area -->
+  <%= render 'title_bar' %>
+  <div class="main-holder"><!-- main holder -->
+    <div id="content"><!-- content -->
+      <div class="content_right_sidebar"><!-- left content -->
+        <%= table_for( @faqs, :html => { :class => 'zebra' } ) do |t| %>
+            <%= t.head do %>
+              <%= t.r do %>
+                <%= t.h( '#', :class => 'center', :style => 'width: 10%;' ) %>
+                <%= t.h( 'Question', :class => 'left', :style => 'width: 30%;' ) %>
+                <%= t.h( 'Answer', :class => 'left', :style => 'width: 60%;' ) %>
+              <% end %>
+            <% end %>
+            <%= t.body_r do |faq| %>
+                <%= t.d( faq.number, :class => 'center' ) %>
+                <%= t.d( faq.question, :class => 'left' ) %>
+                <%= t.d( faq.answer, :class => 'left' ) %>
+            <% end %>
+        <% end %>
+        <%= will_paginate @faqs, :class => 'karma-pages' %>
+      </div><!-- end left content -->
+      <br class="clear" />
+    </div><!-- end content -->
+    <div id="sub_nav" class="nav_right_sub_nav"><!-- start sub nav -->
+      <%= render 'sub_nav' %>
+    </div><!-- end sub nav -->
+  </div><!-- end main holder -->
+</div><!-- end main area -->
