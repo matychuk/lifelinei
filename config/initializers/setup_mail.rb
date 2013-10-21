@@ -3,7 +3,7 @@ ActionMailer::Base.smtp_settings = {
     :port => 80,
     :domain => 'lifelinei.com',
     :user_name => 'support@lifelinei.com',
-    :password => 'soccer',
+    :password => 'support',
     :authentication => 'plain',
     :enable_starttls_auto => true
 }
