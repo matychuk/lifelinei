@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e68bc214-b1db-45ec-85a7-2e9b1db7cb4a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="lifelinei.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="e68bc214-b1db-45ec-85a7-2e9b1db7cb4a" time="1384275781097" ignored="false" />
+    <file path="/Dummy.txt" changelist="e68bc214-b1db-45ec-85a7-2e9b1db7cb4a" time="1384275870424" ignored="false" />
     <file path="/login_controller.rb" changelist="e68bc214-b1db-45ec-85a7-2e9b1db7cb4a" time="1370196244902" ignored="false" />
     <file path="/login.html.erb" changelist="e68bc214-b1db-45ec-85a7-2e9b1db7cb4a" time="1371745517925" ignored="false" />
     <file path="/routes.rb" changelist="e68bc214-b1db-45ec-85a7-2e9b1db7cb4a" time="1373648525600" ignored="false" />
@@ -1193,7 +1190,11 @@
       <created>1384275796740</created>
       <updated>1384275796740</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="changed production database">
+      <created>1384275873803</created>
+      <updated>1384275873803</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="ToolWindowManager">
