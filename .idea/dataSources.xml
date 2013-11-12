@@ -29,7 +29,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:lifelinei_production</jdbc-url>
       <user-name>lifelinei</user-name>
-      <user-password>dfc2dfcbdfdadfdadfd3dfc8dfc5dfd3</user-password>
+      <user-password>dfc2dfcbdfdadfdadfd3dfc8dfc5dfd3df9b</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>

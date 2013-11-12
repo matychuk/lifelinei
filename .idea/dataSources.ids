@@ -24,4 +24,18 @@
       </library>
     </libraries>
   </data-source>
+  <data-source source="LOCAL" name="Rails lifelinei: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="b4f992e2-6419-44bc-b400-13c13c3f8aab">
+    <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+    <jdbc-url>jdbc:postgresql:lifelinei_production</jdbc-url>
+    <user-name>lifelinei</user-name>
+    <user-password>dfc2dfcbdfdadfdadfd3dfc8dfc5dfd3</user-password>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-driver-license.txt</url>
+      </library>
+      <library>
+        <url>jar://$USER_HOME$/Library/Preferences/RubyMine50/jdbc-drivers/postgresql-9.2-1002.jdbc4.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
 </component>
