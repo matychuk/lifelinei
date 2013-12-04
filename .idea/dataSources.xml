@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" hash="785831205">
-    <data-source source="LOCAL" name="Rails lifelinei: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="a3547e49-e4c6-4232-8002-dd3bf1860c4f">
+    <data-source source="LOCAL" name="Rails lifelinei: development" uuid="a3547e49-e4c6-4232-8002-dd3bf1860c4f">
+      <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
       <libraries>
@@ -13,7 +14,8 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails lifelinei: development" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="48603503-77d3-4b13-bf92-1d2f6f26123e">
+    <data-source source="LOCAL" name="Rails lifelinei: development" uuid="48603503-77d3-4b13-bf92-1d2f6f26123e">
+      <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
       <libraries>
@@ -25,7 +27,8 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Rails lifelinei: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="b4f992e2-6419-44bc-b400-13c13c3f8aab">
+    <data-source source="LOCAL" name="Rails lifelinei: production" uuid="b4f992e2-6419-44bc-b400-13c13c3f8aab">
+      <driver-ref>postgresql</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:lifelinei_production</jdbc-url>
       <user-name>lifelinei</user-name>
